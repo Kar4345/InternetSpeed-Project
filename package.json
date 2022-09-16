@@ -1,0 +1,5 @@
+{
+  "dependencies": {
+    "network-speed": "^2.1.1"
+  }
+}

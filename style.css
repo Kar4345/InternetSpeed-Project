@@ -1,0 +1,160 @@
+body {
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: white;
+  }
+  .social {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding-right: 40px;
+  }
+  a {
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+  }
+  #linked {
+    margin-left: 5px;
+  }
+  #wiki {
+    margin-left: 5px;
+  }
+  img {
+    width: 35px;
+    height: 35px;
+    padding-left: 10px;
+  }
+  #git:hover {
+    cursor: pointer;
+  }
+  #linked:hover {
+    cursor: pointer;
+  }
+  #insta:hover {
+    cursor: pointer;
+  }
+  #heading {
+    position: relative;
+    margin-top: 0px;
+    top: auto;
+    margin-bottom: 5%;
+    font-size: 75px;
+    font-family: monospace;
+    text-align: center;
+    color: rgb(3, 90, 211);
+    text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 20px #fff, 0 0 40px #00f,
+      0 0 40px #00f, 0 0 45px #00f, 0 0 100px #00f, 0 0 65px #00f;
+  }
+  
+  .container {
+    width: auto;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+  }
+  /* div > * {
+      border: 1px solid white;
+      background: rgba(58, 23, 255, 0.42);
+  } */
+  .meter {
+    width: 400px;
+    height: 40vh;
+  }
+  .speed {
+    width: 400px;
+    height: 15vh;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    font-weight: 900;
+    font-size: 4rem;
+    color: rgb(13, 41, 0);
+  }
+  .start {
+    width: 400px;
+    height: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  #start-button {
+    border: none;
+    background-color: skyblue;
+    color: black;
+    width: 150px;
+    height: 50px;
+    font-size: 1.5rem;
+    font-weight: 600;
+    border-radius: 20px;
+  }
+  #start-button:hover {
+    cursor: pointer;
+    border: 2px solid black;
+    box-shadow: 5px 5px 10px blue ;
+  }
+  .guage {
+    width: 100%;
+    max-width: 250px;
+    font-family: "Roboto", sans-serif;
+    font-size: 42px;
+    color: #004033;
+  }
+  
+  .guage__body {
+    width: 100%;
+    height: 0;
+    padding-bottom: 50%;
+    background: white;
+    position: relative;
+    border-top-left-radius: 100% 200%;
+    border-top-right-radius: 100% 200%;
+  
+    overflow: hidden;
+  }
+  
+  .guage__fill {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: inherit;
+    height: 100%;
+    background: red;
+    transform-origin: center top;
+    transform: rotate(0turn);
+    transition: transform 0.2s ease-out;
+  }
+  
+  .guage__cover {
+    width: 75%;
+    height: 150%;
+    background: white;
+    border-radius: 50%;
+  
+    position: absolute;
+    top: 25%;
+    left: 50%;
+    transform: translateX(-50%);
+  
+    /* text */
+    font-size: 42px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 25%;
+    box-sizing: border-box;
+  }
+  
+  
+  @media only screen and (max-width: 450px) {
+    #heading{
+      font-size: 45px;
+    }
+  }

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="bundle.js"></script>
+  </head>
+  <body>
+    <header class="social">
+      <a href="https://github.com/Kar4345/" target="_blank"
+        ><div id="git"><img alt="Github" src="./resources/giticon.webp" /></div
+      ></a>
+      <a
+        href="https://www.linkedin.com/in/kartik-ghudhavad-14a53997/"
+        target="_blank"
+        ><div id="linked">
+          <img alt="linkedIn" src="./resources/linkedin.png" /></div
+      ></a>
+      <a href="https://www.instagram.com/ghudawadkartik/" target="_blank"
+        ><div id="insta">
+          <img alt="instagram" src="./resources/Instagram-Icon.png.webp" /></div
+      ></a>
+    </header>
+
+    <header>
+      <div id="heading">Internet Speedometer</div>
+    </header>
+    <div class="conatainer">
+      <div class="meter">
+        <div class="gauge">
+          <div class="guage__body">
+            <div class="guage__fill"></div>
+            <div class="guage__cover"></div>
+          </div>
+        </div>
+      </div>
+      <div class="speed">0.00 Mbps</div>
+      <div class="start">
+        <button type="button" id="start-button">Start</button>
+      </div>
+    </div>
+    <script defer>
+      const spd = document.getElementsByClassName("speed")[0];
+      function setGuageValue(value) {
+        console.log(value);
+        if (value < 0 || value > 1) {
+          return;
+        }
+        document.querySelector(".guage__fill").style.transform = `rotate(${
+          value / 2
+        }turn)`;
+        document.querySelector(".guage__cover").textContent = `${Math.round(
+          value * 100
+        )} Mbps`;
+      }
+      async function getSpeed() {
+        let speed = await getNetworkDownloadSpeed();
+        console.log(spd);
+        spd.innerText = speed.mbps + " Mbps";
+        setGuageValue(Number(speed.mbps / 100));
+      }
+      document.getElementById("start-button").addEventListener("click", () => {
+        spd.innerText = "Loading...";
+        for (let i = 0; i < 100; i++) {
+          setTimeout(getSpeed(), 700);
+        }
+      });
+    </script>
+  </body>
+</html>
