@@ -1,1 +1,47 @@
-# InternetSpeed-Project
+# Internet Speed Calculator
+
+------------
+
+## Description
+This project will give speed of your internet speed by calculating the time between fetching the data and actual recieving the data.
+
+------------
+
+## Video View
+
+
+------------
+
+## Host Link
+
+------------
+
+## Github Repo
+https://github.com/Kar4345/InternetSpeed-Project.git
+
+------------
+
+## Project Structure
+- index.html (HTML File)
+- style.css (Styling File CSS)
+- index.js (JavaScript File)
+
+------------
+
+## Image View
+<img width="1440" alt="Screenshot 2022-09-29 at 8 41 15 PM" src="https://user-images.githubusercontent.com/103517760/193069914-8f0f3859-9c6d-4a1b-a442-2fccae215ab7.png">
+
+------------
+
+## Key Takeaways
+- HTML
+- CSS
+- JAVASCRIPT
+
+------------
+
+## Getting Started
+- Clone the github repository.
+- Open it on VS Code and go to index.html file.
+- Click on Go live extension below and the webpage will be live.
+
