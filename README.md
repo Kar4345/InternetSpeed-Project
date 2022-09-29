@@ -29,7 +29,8 @@ https://github.com/Kar4345/InternetSpeed-Project.git
 ------------
 
 ## Image View
-<img width="1440" alt="Screenshot 2022-09-29 at 8 41 15 PM" src="https://user-images.githubusercontent.com/103517760/193069914-8f0f3859-9c6d-4a1b-a442-2fccae215ab7.png">
+<img width="1440" alt="Screenshot 2022-09-29 at 8 50 07 PM" src="https://user-images.githubusercontent.com/103517760/193071948-0b328c7c-0d28-4b78-a8a0-b89389fa6c38.png">
+
 
 ------------
 
