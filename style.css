@@ -2,6 +2,7 @@ body {
     width: 100vw;
     height: 100vh;
     margin: 0;
+    padding: 0;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -50,8 +51,8 @@ body {
     font-family: monospace;
     text-align: center;
     color: rgb(3, 90, 211);
-    text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 20px #fff, 0 0 40px #00f,
-      0 0 40px #00f, 0 0 45px #00f, 0 0 100px #00f, 0 0 65px #00f;
+    text-shadow: 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 20px #00f,
+      0 0 20px #00f, 0 0 20px #00f, 0 0 20px #00f, 0 0 20px #00f;
   }
   
   .container {
@@ -99,6 +100,7 @@ body {
     cursor: pointer;
     border: 2px solid black;
     box-shadow: 5px 5px 10px blue ;
+    
   }
   .guage {
     width: 100%;
